@@ -6,7 +6,6 @@ ruby "2.1.5"
 gem "rails", "~>4.2"
 # Use sqlite3 as the database for Active Record
 gem "sqlite3", group: :development
-#gem "pg", group: :production
 
 # Use SCSS for stylesheets
 gem "sass-rails"
@@ -42,6 +41,7 @@ gem "autoprefixer-rails"
 # gem "capistrano-rails", group: :development
 group :production do
   gem "rails_12factor"
+  gem "pg"
 end
 
 group :development, :test do
